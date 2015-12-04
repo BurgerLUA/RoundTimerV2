@@ -93,6 +93,8 @@ if SERVER then
 				for k,v in pairs(player.GetAll()) do
 					v:UnLock()
 					v:Spawn()
+					v:SetFrags(0)
+					v:SetDeaths(0)
 				end
 				
 				net.Start("BurTimerFinish")
